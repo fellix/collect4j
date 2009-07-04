@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+package com.rollingwithcode.collect;
+
+import java.util.Collection;
+
+/**
+ * Make conditions for the collection
+ * @author Rafael Felix da Silva
+ * @version 1.0
+ * @since 0.0.1-snaphost
+ */
+public class WhenHandler {
+	private Collection<?> collection;
+	/**
+	 * Defaults construtor
+	 * @param collection
+	 * @since 1.0
+	 */
+	public WhenHandler(Collection<?> collection) {
+		super();
+		this.collection = collection;
+		if(collection == null){
+			throw new NullPointerException("Collection cann't be null");
+		}
+	}
+	/**
+	 * Select some fields for filter
+	 * @param fields to filter
+	 * @return CompareHandler
+	 * @since 1.0
+	 * @see #when()
+	 */
+	public CompareHandler when(Object...fields){
+		return new CompareHandler(fields, collection);
+	}
+	/**
+	 * Use the default toString() method to compare
+	 * @return CompareHandler
+	 * @since 1.0
+	 * @see #when(Object...)
+	 */
+	public CompareHandler when(){
+		return new CompareHandler(null, collection);
+	}
+	
+}

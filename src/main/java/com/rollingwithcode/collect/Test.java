@@ -17,7 +17,7 @@ public class Test {
 		lista.add("Melancia");
 		lista.add("Melão");
 		lista.add("Maracujá");
-		Collection<String> busca = (Collection<String>) new Collect().in(lista).when().eql("Mel", "Ma");
+		Collection<String> busca = new Collect().in(lista).when().eql("Mel", "Ma");
 		for(String s : busca){
 			System.out.println(s);
 		}
@@ -27,7 +27,7 @@ public class Test {
 		pessoas.add(new Pessoa("Samuel", 25));
 		pessoas.add(new Pessoa("Pedro", 23));
 		pessoas.add(new Pessoa("Rafael", 23));
-		Collection<Pessoa> buscaP = (Collection<Pessoa>) new Collect().in(pessoas).when("nome").eql("Rafael");
+		Collection<Pessoa> buscaP = new Collect().in(pessoas).when("nome").eql("Rafael");
 		for(Pessoa p : buscaP){
 			System.out.println(p);
 		}

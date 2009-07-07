@@ -11,14 +11,14 @@ import java.util.Collection;
  * @version 1.0
  * @since 0.1-snaphost
  */
-public class WhenHandler {
-	private Collection<?> collection;
+public class WhenHandler<E> {
+	private Collection<E> collection;
 	/**
 	 * Defaults construtor
 	 * @param collection
 	 * @since 1.0
 	 */
-	public WhenHandler(Collection<?> collection) {
+	public WhenHandler(Collection<E> collection) {
 		super();
 		this.collection = collection;
 		if(collection == null){
@@ -32,8 +32,8 @@ public class WhenHandler {
 	 * @since 1.0
 	 * @see #when()
 	 */
-	public CompareHandler when(Object...fields){
-		return new CompareHandler(fields, collection);
+	public CompareHandler<E> when(Object...fields){
+		return new CompareHandler<E>(fields, collection);
 	}
 	/**
 	 * Use the default toString() method to compare
@@ -41,8 +41,8 @@ public class WhenHandler {
 	 * @since 1.0
 	 * @see #when(Object...)
 	 */
-	public CompareHandler when(){
-		return new CompareHandler(null, collection);
+	public CompareHandler<E> when(){
+		return new CompareHandler<E>(null, collection);
 	}
 	
 }

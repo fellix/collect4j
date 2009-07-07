@@ -19,10 +19,10 @@ public class Collect {
 	 * @return WhenHandler
 	 * @since 1.0
 	 */
-	public <T> WhenHandler in(Collection<T> collection){
+	public <T> WhenHandler<T> in(Collection<T> collection){
 		if(collection == null){
 			throw new NullPointerException("Collection can not be null");
 		}
-		return new WhenHandler(collection);
+		return new WhenHandler<T>(collection);
 	}
 }

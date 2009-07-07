@@ -11,6 +11,10 @@ Add the jar file collect4j-X.X.jar to your classpath, or dowload from maven repo
  - supports generics (objects is supported too)
  - comparates some fields (Only for your custom class)
 
+## TODO
+ - Implements more Collection searchs
+ - Map and Set Implementations
+
 ## Usage Samples
 - Simple Collections
 <pre>

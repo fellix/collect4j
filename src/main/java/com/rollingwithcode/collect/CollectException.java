@@ -7,7 +7,7 @@ package com.rollingwithcode.collect;
  * Default Exception for the collections
  * @author Rafael Felix da Silva
  * @version 1.0
- * @since 0.0.1-snapshot
+ * @since 0.1-snapshot
  */
 public class CollectException extends RuntimeException {
 

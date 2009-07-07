@@ -9,7 +9,7 @@ import java.util.Collection;
  * Make conditions for the collection
  * @author Rafael Felix da Silva
  * @version 1.0
- * @since 0.0.1-snaphost
+ * @since 0.1-snaphost
  */
 public class WhenHandler {
 	private Collection<?> collection;

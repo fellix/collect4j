@@ -9,7 +9,7 @@ import java.util.Collection;
  * Main class for the DSL.
  * @author Rafael Felix da Silva
  * @version 1.0
- * @since 0.0.1-snapshot
+ * @since 0.1-snapshot
  */
 public class Collect {
 	/**

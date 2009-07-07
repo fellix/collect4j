@@ -11,7 +11,7 @@ import java.util.Collection;
  * Used to make compare using values
  * @author Rafael Felix da Silva
  * @version 1.0
- * @since 0.0.1-snaphost
+ * @since 0.1-snaphost
  */
 public class CompareHandler {
 	

@@ -6,6 +6,18 @@
 	<name>collect4j</name>
 	<version>0.1-SNAPSHOT</version>
 	<description>DSL for Java Collection API</description>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<developers>
 		<developer>
 			<name>Rafael Felix da Silva</name>

@@ -5,6 +5,7 @@ package com.rollingwithcode.collect;
 
 import java.util.Collection;
 
+
 /**
  * Make conditions for the collection
  * @author Rafael Felix da Silva

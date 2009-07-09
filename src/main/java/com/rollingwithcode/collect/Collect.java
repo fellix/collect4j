@@ -5,6 +5,7 @@ package com.rollingwithcode.collect;
 
 import java.util.Collection;
 
+
 /**
  * Main class for the DSL.
  * @author Rafael Felix da Silva

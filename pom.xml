@@ -9,6 +9,7 @@
 	Using this DSL you can filter a collection using a high level language.
 	 Collect4j supports objects and primitive types.
 	</description>
+	<!-- Site Definitions -->
 	<build>
 		<plugins>
 			<plugin>
@@ -74,7 +75,6 @@
       <plugin>
         <artifactId>maven-clover-plugin</artifactId>
       </plugin>
-            
     </plugins>
   </reporting>
 	<dependencies>

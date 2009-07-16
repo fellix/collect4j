@@ -8,6 +8,7 @@ import java.util.Collection;
 import com.rollingwithcode.collect.comparator.CollectComparator;
 import com.rollingwithcode.collect.comparator.EqualsComparator;
 import com.rollingwithcode.collect.comparator.LikeComparator;
+import com.rollingwithcode.collect.comparator.OnlyComparator;
 
 /**
  * Used to make compare using values
@@ -47,6 +48,7 @@ public class CompareHandler<E> {
 	 * @param values passed as parameters
 	 * @return Collection for the result
 	 * @since 1.0
+	 * @see CollectComparator#compare(Collection, Object[], Object[])
 	 */
 	public Collection<E> compare(CollectComparator<E> comparator, Object...values){
 		return comparator.compare(collection, fields, values);
@@ -57,11 +59,23 @@ public class CompareHandler<E> {
 	 * @param values for each fields
 	 * @return new Collection (ArrayList) with the filter
 	 * @since 1.0
-	 * @see #primitiveLike(Object[])
-	 * @see #objectLike(Object[])
+	 * @see LikeComparator
 	 * @throws CollectException
+	 * @see #compare(CollectComparator, Object...)
 	 */
 	public Collection<E> like(Object...values){
 		return compare(new LikeComparator<E>(), values);
+	}
+	/**
+	 * Compare if any field is equals to all values.
+	 * @param values for each fields
+	 * new Collection (ArrayList) with the filter
+	 * @since 1.0
+	 * @see OnlyComparator
+	 * @see #compare(CollectComparator, Object...)
+	 * @throws CollectException
+	 */
+	public Collection<E> only(Object...values){
+		return compare(new OnlyComparator<E>(), values);
 	}
 }

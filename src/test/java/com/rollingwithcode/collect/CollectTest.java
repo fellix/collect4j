@@ -82,7 +82,7 @@ public class CollectTest {
 		Collection<Person> ret = collect.in(persons).when("name", "age").like("Rafael", 21);
 		assertEquals(2, ret.size());
 	}
-	
+	@Test
 	public void shouldCollectWithCustomCompare(){
 		Collection<Person> ret = collect.in(persons).when().compare(new CollectComparator<Person>(){
 
@@ -102,6 +102,11 @@ public class CollectTest {
 			
 		}, "R");
 		assertEquals(1, ret.size());
+	}
+	@Test
+	public void shouldCollectWithOnly(){
+		Collection<Person> col = collect.in(persons).when("name", "age").only("Rafael", 21);
+		assertEquals(1, col.size());
 	}
 	
 	private class Person{

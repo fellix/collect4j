@@ -5,15 +5,26 @@ Simple Commands do filter and access values in a collection.
 ## Using
 Add the jar file collect4j-X.X.jar to your classpath, or dowload from maven repositories (repo1)
 
+## Building from source
+Needs:
+<ul>
+  <li>Sun SDK for Java 1.6</li>
+  <li>Apache Maven 2.0.8</li>
+</ul>
+Clone this repository
+Execute a comand mvn clean install
+
+
 ## Supports
  - eql for equals comparision
  - like for string content
+ - only method, is same on eql but if eql receice two values is used or, only use and
  - supports generics (objects is supported too)
  - comparates some fields (Only for your custom class)
 
 ## TODO
  - Implements more Collection searchs
- - Map and Set Implementations
+ - Map Implementations
 
 ## Usage Samples
 - Simple Collections

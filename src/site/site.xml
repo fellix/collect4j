@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
+    name="Collect4j">
+	<body>
+		<menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Getting Started" href="getting.html"/>
+      <item name="FAQ" href="faq.html"/>
+      <item name="Team" href="team.html"/>
+    </menu>
+    <menu name="Download">
+      <item name="Dowload" href="dowload.html"/>
+      <item name="Source" href="source.html"/>
+    </menu>
+
+    <menu name="Documentations">
+      <item name="JavaDoc" href="apidocs/index.html"/>
+    </menu>
+		
+	</body>
+    </project>

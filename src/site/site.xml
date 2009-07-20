@@ -8,15 +8,17 @@
       <item name="Introduction" href="index.html"/>
       <item name="Getting Started" href="getting.html"/>
       <item name="FAQ" href="faq.html"/>
-      <item name="Team" href="team.html"/>
+      <item name="Team" href="team-list.html"/>
+      <item name="Contribute" href="contribute.html"/>
     </menu>
     <menu name="Download">
-      <item name="Dowload" href="dowload.html"/>
-      <item name="Source" href="source.html"/>
+      <item name="Download" href="download.html"/>
+      <item name="Source" href="https://github.com/fellix/collect4j/tree"/>
     </menu>
 
-    <menu name="Documentations">
+    <menu name="Documentation">
       <item name="JavaDoc" href="apidocs/index.html"/>
+      <item name="Examples" href="samples.html"/>
     </menu>
 		
 	</body>

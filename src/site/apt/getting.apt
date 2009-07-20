@@ -1,0 +1,16 @@
+Getting Stated
+
+	After downloaded Collect4j, the use of this is very simple.
+
+Simple Consulting
+
+	For Consulting simple collection containing <String>.
+	This collection is used in all samples in this page
+	<pre>
+		List<String> names = new ArrayList<String>();
+		names.add("Rafael");
+		names.add("John");
+		names.add("Edward");
+		names.add("Michael");
+		names.add("Ralf");
+	</pre>	 

@@ -18,12 +18,12 @@ Execute a comand mvn clean install
 ## Supports
  - eql for equals comparision
  - like for string content
- - only method, is same on eql but if eql receice two values is used or, only use and
- - supports generics (objects is supported too)
+ - only method, is same on eql but if eql receive two values is used or, only use and
+ - supports generic (objects is supported too)
  - comparates some fields (Only for your custom class)
 
 ## TODO
- - Implements more Collection searchs
+ - Implements more Collection search (Like a regex)
  - Map Implementations
 
 ## Usage Samples

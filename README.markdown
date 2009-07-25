@@ -70,7 +70,7 @@ public class Person{
 		persons.add(new Person("Suélen", 19));
 		persons.add(new Person("Pedro", 23));
 		persons.add(new Person("Rodrigo", 23));
-	  Collection<Person> busca = (Collection<Person>) new Collect().in(persons).when("age").eql("23");//Compare with the field age is equals to 23, and return a new collection
+	  Collection<Person> busca = (Collection<Person>) new Collect().in(persons).when("age").eql(23);//Compare with the field age is equals to 23, and return a new collection
 	  Collection<Person> busca = (Collection<Person>) new Collect().in(persons).when().eql("23");//Compare the Person#toString() contais the string "23"
 </pre>
 
